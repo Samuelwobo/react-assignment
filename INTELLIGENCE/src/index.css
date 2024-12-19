@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#ffff] text-black;
+  margin: 0;
+  padding: 0;
+}
+
+.code-window {
+  @apply bg-[#1E1E1E] rounded-lg p-4 font-mono text-sm;
+}
+
+.dot {
+  @apply w-2 h-2 rounded-full bg-white/30 transition-all duration-300;
+}
+
+.dot.active {
+  @apply bg-white;
+}
+
+.nav-dots {
+  @apply flex gap-2;
+}
